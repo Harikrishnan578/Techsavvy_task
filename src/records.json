@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "e8b4a75f-39d5-4a7e-8dbc-78ed355f0272",
+		"name": "System Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26861414",
+		"_collection_link": "https://lively-trinity-77951.postman.co/workspace/Team-Workspace~406dde80-bcfc-4995-881a-a5c81a70b8ed/collection/26861414-e8b4a75f-39d5-4a7e-8dbc-78ed355f0272?action=share&source=collection_link&creator=26861414"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9",
+						"disabled": true
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:3000",
+						"disabled": true
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:3000/",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "cross-site",
+						"disabled": true
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\"",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"test@dev.com\",\"password\":\"#Test@123\",\"isLoggedInHere\":0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://coreapi.hectorai.live/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"coreapi",
+						"hectorai",
+						"live"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "METRICS LIST DROPDOWN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-USER-IDENTITY",
+						"value": "U2FsdGVkX18lreBwDMZIZaWXmCA+9GGYXAFttifVV7ovRjRGNNlnl3F8QSfmgxbGrm4zk42ud8ygR0rZccDFlOVDj01aIUTjKrX6TNza+qoIkSe0xGH0MxBlUXrV+c+ULtgFHS9XcTXbrIGbSN1Cwt18SZK5UOGF3aavkG5ZGXwOAopznMUp4CJOxE9a7DzNsb0rJpsguSXehn+Fw0b6GT30m/c0+7Nhbtwi8GFflEgr8F41hE4jMoLwCEajSkxQhTxorAqtJRF0tlM5sUeAvBODqx4sZMB8MNv9v9NzQ7cA+P+FKB6VSS9QIwRx5PC4LQnmthfupakaZmnRL1YbZ56rPbt8lu3QSRS1yuV/GwRuCN3MBwaHitsgzMYEnAMiYGup+W/nbNsukqCXhSZGtg=="
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGI0ZTNhN2Y1YmU4ZDY2MjVlN2I0MiIsImZ1bGxOYW1lIjoiU3lzdGVtIFRlc3QiLCJlbWFpbCI6InRlc3RAZGV2LmNvbSIsInNlc3Npb25JZCI6InJhbmRvbVN0cmluZyIsImlhdCI6MTcyMDQwNjQzNH0.oo2gUHroTcJ7X-I0-hNvtuG4tq6sGL2yr4Veaf37JPc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"type\":\"customizeMetrics\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://coreapi.hectorai.live/api/day-parting/DayPartingFilterList",
+					"protocol": "https",
+					"host": [
+						"coreapi",
+						"hectorai",
+						"live"
+					],
+					"path": [
+						"api",
+						"day-parting",
+						"DayPartingFilterList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "METRICS PERFORMANCE LINE CHART",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-GB,en;q=0.9"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGI0ZTNhN2Y1YmU4ZDY2MjVlN2I0MiIsImZ1bGxOYW1lIjoiU3lzdGVtIFRlc3QiLCJlbWFpbCI6InRlc3RAZGV2LmNvbSIsInNlc3Npb25JZCI6InJhbmRvbVN0cmluZyIsImlhdCI6MTcyMDQwNjQzNH0.oo2gUHroTcJ7X-I0-hNvtuG4tq6sGL2yr4Veaf37JPc"
+					},
+					{
+						"key": "X-USER-IDENTITY",
+						"value": "U2FsdGVkX1+GZ5mnAUMis4VC8jL5g2BdcRai8iXYI29OIStJwwzI4Wf6H8+/nJjEDGl4ly0lR3JXZddDjqwuWaZMDyCIOc4WW586U//KMIUVsM2kMN3KMJf8eGAcW7X0aRgkNwkQKVlyZNf1sQqvusuFbb3XFl5GP+otaIQh7NrOgEMvBxMYmiA9OIla8iLAbKkHVCdAIFW+/qjDlZWq6u5fs9k266mMdr4UuFxvEDS6U0+xjei5BdwUaZvWmlETmKDT4JtLHVcTECPxcxHJllRClmUPcnjC5xRJV0mfsG1sRpHLHDW5o5GanBbdQU5yDYrJEj/OYXrYySZ2tzQu/b6EqzTguqNISSNhjxNtSlK3MXBisf5aSZQanXxIpKoYkXaNmo2k45y1tl0xe66TWw=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"startDate\":\"2024-06-08\",\"endDate\":\"2024-07-07\",\"metrics\":[\"CPC\",\"CR_perc\",\"ROAS\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://coreapi.hectorai.live/api/day-parting/DayPartingPerformanceGraphList",
+					"protocol": "https",
+					"host": [
+						"coreapi",
+						"hectorai",
+						"live"
+					],
+					"path": [
+						"api",
+						"day-parting",
+						"DayPartingPerformanceGraphList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "METRICS HEAT MAP TABLE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGI0ZTNhN2Y1YmU4ZDY2MjVlN2I0MiIsImZ1bGxOYW1lIjoiU3lzdGVtIFRlc3QiLCJlbWFpbCI6InRlc3RAZGV2LmNvbSIsInNlc3Npb25JZCI6InJhbmRvbVN0cmluZyIsImlhdCI6MTcyMDQwNjQzNH0.oo2gUHroTcJ7X-I0-hNvtuG4tq6sGL2yr4Veaf37JPc"
+					},
+					{
+						"key": "X-USER-IDENTITY",
+						"value": "U2FsdGVkX1/s3KYiwn1BdNtI1nNitQYbPVGs5G6NloO7PVGlCBTzYpJzAOD/8GaIp30IcvyKuBArXvm5xNN+gOhrSx51l49Ejxan4p7mt1vAUIE6/O277AUuMZVIMsmOtF5YGyaGkyDk9bMjArr3ekLdCKAZu9xXN/b92jqFqXb2jy4tbQbp8UUQxgywAWk1gR4dSb/vaJt4oEIeh0EWuEc4xU2NVdGSedANzYRqUEatsdtRYbNbdkZMt9koQcKO55/Y6fGafYUCztvkASn6i8WyPIxXMq6vf+xo4IYXeOh2WP8WgH/cQgq6V74Fnl82KYtUvGzWVMXpm2rrhsHewJptgJvJY+NinV05HdRJGtXQ1SN3/IhqyJZJhTb/TcO5SkDa8dIGfwgcciGspOofrA=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"startDate\":\"2024-06-08\",\"endDate\":\"2024-07-07\",\"metrics\":[\"CPC\",\"CR_perc\",\"ROAS\"]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://coreapi.hectorai.live/api/day-parting/heatmap-list",
+					"protocol": "https",
+					"host": [
+						"coreapi",
+						"hectorai",
+						"live"
+					],
+					"path": [
+						"api",
+						"day-parting",
+						"heatmap-list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
